@@ -1,8 +1,9 @@
 # Archivo: cliente.py
 
 class Cliente:
-    def __init__(self, nombre, email, saldo, edad):
+    def __init__(self, nombre, apellido, email, saldo, edad):
         self.nombre = nombre
+        self.apellido = apellido
         self.email = email
         self.saldo = saldo
         self.edad = edad
@@ -19,12 +20,12 @@ class Cliente:
         return f"Saldo recargado. Saldo actual: {self.saldo}"
 
     def __str__(self):
-        return f"Nombre: {self.nombre}\nEmail: {self.email}\nSaldo: {self.saldo}\nEdad: {self.edad}"
+        return f"Nombre: {self.nombre}\nApellido:  {self.apellido}\nEmail: {self.email}\nSaldo: {self.saldo}\nEdad: {self.edad}"
 
 # Clase derivada (subclase) utilizando herencia
 class ClientePremium(Cliente):
-    def __init__(self, nombre, email, saldo, edad, descuento):
-        super().__init__(nombre, email, saldo, edad)
+    def __init__(self, nombre, apellido, email, saldo, edad, descuento):
+        super().__init__(nombre, apellido, email, saldo, edad)
         self.descuento = descuento
 
     def aplicar_descuento(self, monto):

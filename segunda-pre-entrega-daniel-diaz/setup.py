@@ -10,6 +10,6 @@ setup(
     url="https://github.com/Dragunovich1/coder",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Operating System :: Windows 11",
+        "Operating System :: OS Independent",
     ],
 )
