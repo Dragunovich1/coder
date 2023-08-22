@@ -1,0 +1,41 @@
+Atributos y Métodos de la Clase Cliente:
+
+Atributos:
+
+nombre: Almacena el nombre del cliente.
+apellido: Almacena el apellido del cliente
+email: Almacena el correo electrónico del cliente.
+saldo: Almacena el saldo disponible del cliente.
+edad: Almacena la edad del cliente.
+
+Métodos:
+
+realizar_compra(monto): Permite al cliente realizar una compra siempre y cuando tenga saldo suficiente. Actualiza el saldo después de la compra.
+recargar_saldo(monto): Permite al cliente recargar su saldo con un monto específico. Actualiza el saldo después de la recarga.
+__str__(): Devuelve una representación en cadena del cliente, que muestra su nombre, email, saldo y edad.
+
+Atributos y Métodos de la Clase ClientePremium (Hereda de Cliente):
+
+Atributos Adicionales:
+
+descuento: Almacena el porcentaje de descuento del cliente premium.
+Métodos Adicionales:
+
+aplicar_descuento(monto): Aplica el descuento al monto especificado y devuelve el monto con descuento.
+
+Funciones Auxiliares:
+
+clear_screen(): Utilizada para limpiar la pantalla de la consola (dependiendo del sistema operativo).
+input_numero(mensaje): Solicita al usuario un valor numérico con validación.
+input_entero_rango(mensaje, minimo, maximo): Solicita al usuario un valor entero dentro de un rango específico con validación.
+input_email(mensaje): Solicita al usuario una dirección de correo electrónico válida.
+input_nombre_apellido(mensaje): Solicita al usuario un nombre o apellido válido (solo letras, sin espacios).
+
+Funciones Principales:
+
+crear_cliente(): Solicita al usuario los detalles del cliente y crea un objeto de la clase Cliente.
+crear_cliente_premium(): Solicita al usuario los detalles del cliente premium y crea un objeto de la clase ClientePremium.
+realizar_compra(cliente): Permite realizar una compra con el cliente especificado.
+recargar_saldo(cliente): Permite recargar el saldo del cliente especificado.
+aplicar_descuento(cliente_premium): Permite aplicar un descuento a una compra para el cliente premium especificado.
+main(): El punto de entrada principal del programa, donde se muestra el menú y se manejan las opciones del usuario.
